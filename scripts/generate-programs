@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+from pathlib import Path
+
+import click
+
+from scripts import ROOT_DIR
+from scripts.program_generation.doctors import (
+    DOCTORS_DIR,
+    generate_doctors,
+)
+
+
+@click.command("generate-programs")
+@click.option("--output-dir", required=True, type=click.Path(dir_okay=True, file_okay=False, writable=True),
+              default=ROOT_DIR / "programs")
+@click.option("--force", default=True, help="Force output directory removal.")
+def main(output_dir, force):
+    output_dir = Path(output_dir)
+    generate_doctors(DOCTORS_DIR, output_dir, force)
+
+
+if __name__ == '__main__':
+    main()

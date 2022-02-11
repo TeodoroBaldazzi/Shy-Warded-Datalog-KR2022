@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+import datetime
+import logging
+import shutil
+from operator import attrgetter
+from pathlib import Path
+from typing import Callable, Dict, List
+
+import click
+
+from benchmark.tools import ToolID
+from benchmark.tools.core import Status, save_data
+from benchmark.tools.engine import run_engine
+from benchmark.utils.base import REPO_ROOT, TSV_FILENAME, configure_logging
+
+
+def get_vadalog_run_config(dataset_files: List[Path]):
+    return {
+        "binds": [
+            f"{dataset_file.stem}:csv:{dataset_file.absolute()}"
+            for dataset_file in dataset_files
+        ]
+    }
+
+
+get_run_config: Dict[ToolID, Callable] = {
+    ToolID.DLV: lambda *_: {},
+    ToolID.VADALOG: get_vadalog_run_config
+}
+
+
+def run_experiments(
+    dataset_dir: str,
+    program_dir: str,
+    timeout,
+    output_dir,
+    tools: List[str],
+    stop_on_timeout: bool,
+):
+    output_dir = Path(output_dir)
+    shutil.rmtree(output_dir, ignore_errors=True)
+    output_dir.mkdir(parents=True, exist_ok=False)
+    dataset_dir_root = Path(dataset_dir)
+    program_dir = Path(program_dir)
+    configure_logging(str(output_dir / "output.log"))
+    logging.info(f"Using timeout {timeout}, writing to {output_dir}")
+    logging.info(f"Tools: {tools}")
+    logging.info(f"Dataset directory: {dataset_dir_root}")
+
+    for tool in tools:
+        # create tool working directory
+        data = []
+        tool_dir = output_dir / tool
+        tool_dir.mkdir()
+        tool_dataset_dir_root = dataset_dir_root / tool
+        try:
+            for dataset in sorted(tool_dataset_dir_root.iterdir()):
+                tool_program = program_dir / (tool + ".txt")
+                if not tool_program.exists():
+                    tool_program = program_dir / dataset.name / (tool + ".txt")
+                working_dir = tool_dir / dataset.stem
+                logging.info("=" * 100)
+                logging.info(f"Time: {datetime.datetime.now()}")
+                logging.info(f"Processing dataset {dataset}")
+                logging.info(f"Using program: {tool_program}")
+                logging.info(f"Working dir: {working_dir}")
+                dataset_files = list(dataset.iterdir())
+                result = run_engine(
+                    dataset.name,
+                    tool_program,
+                    dataset_files,
+                    timeout,
+                    tool,
+                    tool_config={},
+                    run_config=get_run_config[ToolID(tool)](dataset_files),
+                    working_dir=str(working_dir),
+                    force=True
+                )
+                logging.info(result.to_rows())
+                data.append(result)
+                if stop_on_timeout and result.status in {Status.ERROR, Status.TIMEOUT}:
+                    logging.info(f"Stop on timeout, status={result.status}")
+                    break
+        finally:
+            save_data(data, tool_dir / TSV_FILENAME)
+
+
+@click.command()
+@click.option(
+    "--dataset-dir",
+    type=click.Path(exists=True, file_okay=False),
+    required=True
+)
+@click.option(
+    "--program-dir",
+    type=click.Path(exists=True, file_okay=False),
+    required=True
+)
+@click.option("--timeout", type=float, default=60.0)
+@click.option(
+    "--output-dir", type=click.Path(exists=False), default="results"
+)
+@click.option(
+    "--tool",
+    "-t",
+    multiple=True,
+    default=list(map(attrgetter("value"), ToolID)),
+)
+@click.option("--stop-on-timeout", type=bool, is_flag=True, default=False)
+def main(
+    dataset_dir: str,
+    program_dir: str,
+    output_dir: str,
+    timeout: float,
+    tool: List[str],
+    stop_on_timeout: bool
+):
+    run_experiments(
+        dataset_dir,
+        program_dir,
+        timeout,
+        output_dir,
+        tool,
+        stop_on_timeout
+    )
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,4 @@
+psc(X,P):-keyPerson(X,P),person(P).
+psc(X,P):-psc(Y,P),control(Y,X).
+
+psc(X,P)?

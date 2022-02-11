@@ -1,0 +1,186 @@
+[2022-02-11 19:18:42,588][INFO]: Using timeout 300.0, writing to results/doctors-q07
+[2022-02-11 19:18:42,588][INFO]: Tools: ('dlv', 'vadalog')
+[2022-02-11 19:18:42,588][INFO]: Dataset directory: datasets/doctors
+[2022-02-11 19:18:42,589][INFO]: ====================================================================================================
+[2022-02-11 19:18:42,589][INFO]: Time: 2022-02-11 19:18:42.589188
+[2022-02-11 19:18:42,589][INFO]: Processing dataset datasets/doctors/dlv/0010000
+[2022-02-11 19:18:42,589][INFO]: Using program: programs/doctors-q07/0010000/dlv.txt
+[2022-02-11 19:18:42,589][INFO]: Working dir: results/doctors-q07/dlv/0010000
+[2022-02-11 19:18:42,589][DEBUG]: name=0010000
+[2022-02-11 19:18:42,589][DEBUG]: program=programs/doctors-q07/0010000/dlv.txt
+[2022-02-11 19:18:42,589][DEBUG]: datasets=[PosixPath('datasets/doctors/dlv/0010000/hospital.data'), PosixPath('datasets/doctors/dlv/0010000/treatment.data'), PosixPath('datasets/doctors/dlv/0010000/medprescription.data'), PosixPath('datasets/doctors/dlv/0010000/physician.data')]
+[2022-02-11 19:18:42,589][DEBUG]: timeout=300.0
+[2022-02-11 19:18:42,589][DEBUG]: tool=dlv
+[2022-02-11 19:18:42,589][DEBUG]: tool_config={}
+[2022-02-11 19:18:42,589][DEBUG]: run_config={}
+[2022-02-11 19:18:42,589][DEBUG]: working_dir=results/doctors-q07/dlv/0010000
+[2022-02-11 19:18:42,897][INFO]: name=0010000
+status=Status.SUCCESS
+time_end2end=0.305544162998558
+nb_atoms=837
+command=./bin/dlv-wrapper --program programs/doctors-q07/0010000/dlv.txt --dataset datasets/doctors/dlv/0010000/hospital.data datasets/doctors/dlv/0010000/treatment.data datasets/doctors/dlv/0010000/medprescription.data datasets/doctors/dlv/0010000/physician.data --working-dir ./results/doctors-q07/dlv/0010000
+[2022-02-11 19:18:42,898][INFO]: ====================================================================================================
+[2022-02-11 19:18:42,898][INFO]: Time: 2022-02-11 19:18:42.898244
+[2022-02-11 19:18:42,898][INFO]: Processing dataset datasets/doctors/dlv/0100000
+[2022-02-11 19:18:42,898][INFO]: Using program: programs/doctors-q07/0100000/dlv.txt
+[2022-02-11 19:18:42,898][INFO]: Working dir: results/doctors-q07/dlv/0100000
+[2022-02-11 19:18:42,898][DEBUG]: name=0100000
+[2022-02-11 19:18:42,898][DEBUG]: program=programs/doctors-q07/0100000/dlv.txt
+[2022-02-11 19:18:42,898][DEBUG]: datasets=[PosixPath('datasets/doctors/dlv/0100000/hospital.data'), PosixPath('datasets/doctors/dlv/0100000/treatment.data'), PosixPath('datasets/doctors/dlv/0100000/medprescription.data'), PosixPath('datasets/doctors/dlv/0100000/physician.data')]
+[2022-02-11 19:18:42,898][DEBUG]: timeout=300.0
+[2022-02-11 19:18:42,898][DEBUG]: tool=dlv
+[2022-02-11 19:18:42,898][DEBUG]: tool_config={}
+[2022-02-11 19:18:42,899][DEBUG]: run_config={}
+[2022-02-11 19:18:42,899][DEBUG]: working_dir=results/doctors-q07/dlv/0100000
+[2022-02-11 19:18:44,361][INFO]: name=0100000
+status=Status.SUCCESS
+time_end2end=1.4608107750027557
+nb_atoms=1000
+command=./bin/dlv-wrapper --program programs/doctors-q07/0100000/dlv.txt --dataset datasets/doctors/dlv/0100000/hospital.data datasets/doctors/dlv/0100000/treatment.data datasets/doctors/dlv/0100000/medprescription.data datasets/doctors/dlv/0100000/physician.data --working-dir ./results/doctors-q07/dlv/0100000
+[2022-02-11 19:18:44,362][INFO]: ====================================================================================================
+[2022-02-11 19:18:44,362][INFO]: Time: 2022-02-11 19:18:44.362326
+[2022-02-11 19:18:44,362][INFO]: Processing dataset datasets/doctors/dlv/0500000
+[2022-02-11 19:18:44,362][INFO]: Using program: programs/doctors-q07/0500000/dlv.txt
+[2022-02-11 19:18:44,362][INFO]: Working dir: results/doctors-q07/dlv/0500000
+[2022-02-11 19:18:44,362][DEBUG]: name=0500000
+[2022-02-11 19:18:44,363][DEBUG]: program=programs/doctors-q07/0500000/dlv.txt
+[2022-02-11 19:18:44,363][DEBUG]: datasets=[PosixPath('datasets/doctors/dlv/0500000/hospital.data'), PosixPath('datasets/doctors/dlv/0500000/treatment.data'), PosixPath('datasets/doctors/dlv/0500000/medprescription.data'), PosixPath('datasets/doctors/dlv/0500000/physician.data')]
+[2022-02-11 19:18:44,363][DEBUG]: timeout=300.0
+[2022-02-11 19:18:44,363][DEBUG]: tool=dlv
+[2022-02-11 19:18:44,363][DEBUG]: tool_config={}
+[2022-02-11 19:18:44,363][DEBUG]: run_config={}
+[2022-02-11 19:18:44,363][DEBUG]: working_dir=results/doctors-q07/dlv/0500000
+[2022-02-11 19:18:51,362][INFO]: name=0500000
+status=Status.SUCCESS
+time_end2end=6.997517057003279
+nb_atoms=1000
+command=./bin/dlv-wrapper --program programs/doctors-q07/0500000/dlv.txt --dataset datasets/doctors/dlv/0500000/hospital.data datasets/doctors/dlv/0500000/treatment.data datasets/doctors/dlv/0500000/medprescription.data datasets/doctors/dlv/0500000/physician.data --working-dir ./results/doctors-q07/dlv/0500000
+[2022-02-11 19:18:51,363][INFO]: ====================================================================================================
+[2022-02-11 19:18:51,363][INFO]: Time: 2022-02-11 19:18:51.363280
+[2022-02-11 19:18:51,363][INFO]: Processing dataset datasets/doctors/dlv/1000000
+[2022-02-11 19:18:51,363][INFO]: Using program: programs/doctors-q07/1000000/dlv.txt
+[2022-02-11 19:18:51,363][INFO]: Working dir: results/doctors-q07/dlv/1000000
+[2022-02-11 19:18:51,363][DEBUG]: name=1000000
+[2022-02-11 19:18:51,363][DEBUG]: program=programs/doctors-q07/1000000/dlv.txt
+[2022-02-11 19:18:51,363][DEBUG]: datasets=[PosixPath('datasets/doctors/dlv/1000000/hospital.data'), PosixPath('datasets/doctors/dlv/1000000/treatment.data'), PosixPath('datasets/doctors/dlv/1000000/medprescription.data'), PosixPath('datasets/doctors/dlv/1000000/physician.data')]
+[2022-02-11 19:18:51,363][DEBUG]: timeout=300.0
+[2022-02-11 19:18:51,363][DEBUG]: tool=dlv
+[2022-02-11 19:18:51,363][DEBUG]: tool_config={}
+[2022-02-11 19:18:51,364][DEBUG]: run_config={}
+[2022-02-11 19:18:51,364][DEBUG]: working_dir=results/doctors-q07/dlv/1000000
+[2022-02-11 19:19:06,714][INFO]: name=1000000
+status=Status.SUCCESS
+time_end2end=15.34797482900467
+nb_atoms=1000
+command=./bin/dlv-wrapper --program programs/doctors-q07/1000000/dlv.txt --dataset datasets/doctors/dlv/1000000/hospital.data datasets/doctors/dlv/1000000/treatment.data datasets/doctors/dlv/1000000/medprescription.data datasets/doctors/dlv/1000000/physician.data --working-dir ./results/doctors-q07/dlv/1000000
+[2022-02-11 19:19:06,715][INFO]: ====================================================================================================
+[2022-02-11 19:19:06,715][INFO]: Time: 2022-02-11 19:19:06.715356
+[2022-02-11 19:19:06,715][INFO]: Processing dataset datasets/doctors/vadalog/0010000
+[2022-02-11 19:19:06,715][INFO]: Using program: programs/doctors-q07/0010000/vadalog.txt
+[2022-02-11 19:19:06,715][INFO]: Working dir: results/doctors-q07/vadalog/0010000
+[2022-02-11 19:19:06,715][DEBUG]: name=0010000
+[2022-02-11 19:19:06,716][DEBUG]: program=programs/doctors-q07/0010000/vadalog.txt
+[2022-02-11 19:19:06,716][DEBUG]: datasets=[PosixPath('datasets/doctors/vadalog/0010000/hospital.data'), PosixPath('datasets/doctors/vadalog/0010000/treatment.data'), PosixPath('datasets/doctors/vadalog/0010000/medprescription.data'), PosixPath('datasets/doctors/vadalog/0010000/physician.data')]
+[2022-02-11 19:19:06,716][DEBUG]: timeout=300.0
+[2022-02-11 19:19:06,716][DEBUG]: tool=vadalog
+[2022-02-11 19:19:06,716][DEBUG]: tool_config={}
+[2022-02-11 19:19:06,716][DEBUG]: run_config={'binds': ['hospital:csv:./datasets/doctors/vadalog/0010000/hospital.data', 'treatment:csv:./datasets/doctors/vadalog/0010000/treatment.data', 'medprescription:csv:./datasets/doctors/vadalog/0010000/medprescription.data', 'physician:csv:./datasets/doctors/vadalog/0010000/physician.data']}
+[2022-02-11 19:19:06,716][DEBUG]: working_dir=results/doctors-q07/vadalog/0010000
+[2022-02-11 19:19:06,716][INFO]: Starting Vadalog engine server...
+[2022-02-11 19:19:06,722][INFO]: Wait until Vadalog server is healthy...
+[2022-02-11 19:19:06,726][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:07,730][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:08,733][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:09,737][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:10,741][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:11,748][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:11,960][DEBUG]: http://localhost:8080 "GET / HTTP/1.1" 404 None
+[2022-02-11 19:19:11,961][INFO]: Vadalog is ready!
+[2022-02-11 19:19:16,214][INFO]: name=0010000
+status=Status.SUCCESS
+time_end2end=1.0463566809994518
+nb_atoms=837
+command=./bin/vadalog-wrapper --program programs/doctors-q07/0010000/vadalog.txt --bind hospital:csv:./datasets/doctors/vadalog/0010000/hospital.data treatment:csv:./datasets/doctors/vadalog/0010000/treatment.data medprescription:csv:./datasets/doctors/vadalog/0010000/medprescription.data physician:csv:./datasets/doctors/vadalog/0010000/physician.data --working-dir results/doctors-q07/vadalog/0010000
+[2022-02-11 19:19:16,215][INFO]: ====================================================================================================
+[2022-02-11 19:19:16,215][INFO]: Time: 2022-02-11 19:19:16.215536
+[2022-02-11 19:19:16,215][INFO]: Processing dataset datasets/doctors/vadalog/0100000
+[2022-02-11 19:19:16,215][INFO]: Using program: programs/doctors-q07/0100000/vadalog.txt
+[2022-02-11 19:19:16,216][INFO]: Working dir: results/doctors-q07/vadalog/0100000
+[2022-02-11 19:19:16,216][DEBUG]: name=0100000
+[2022-02-11 19:19:16,217][DEBUG]: program=programs/doctors-q07/0100000/vadalog.txt
+[2022-02-11 19:19:16,217][DEBUG]: datasets=[PosixPath('datasets/doctors/vadalog/0100000/hospital.data'), PosixPath('datasets/doctors/vadalog/0100000/treatment.data'), PosixPath('datasets/doctors/vadalog/0100000/medprescription.data'), PosixPath('datasets/doctors/vadalog/0100000/physician.data')]
+[2022-02-11 19:19:16,217][DEBUG]: timeout=300.0
+[2022-02-11 19:19:16,217][DEBUG]: tool=vadalog
+[2022-02-11 19:19:16,217][DEBUG]: tool_config={}
+[2022-02-11 19:19:16,218][DEBUG]: run_config={'binds': ['hospital:csv:./datasets/doctors/vadalog/0100000/hospital.data', 'treatment:csv:./datasets/doctors/vadalog/0100000/treatment.data', 'medprescription:csv:./datasets/doctors/vadalog/0100000/medprescription.data', 'physician:csv:./datasets/doctors/vadalog/0100000/physician.data']}
+[2022-02-11 19:19:16,218][DEBUG]: working_dir=results/doctors-q07/vadalog/0100000
+[2022-02-11 19:19:16,218][INFO]: Starting Vadalog engine server...
+[2022-02-11 19:19:16,221][INFO]: Wait until Vadalog server is healthy...
+[2022-02-11 19:19:16,227][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:17,233][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:18,236][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:19,240][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:20,244][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:21,249][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:21,425][DEBUG]: http://localhost:8080 "GET / HTTP/1.1" 404 None
+[2022-02-11 19:19:21,426][INFO]: Vadalog is ready!
+[2022-02-11 19:19:27,321][INFO]: name=0100000
+status=Status.SUCCESS
+time_end2end=2.71555273100239
+nb_atoms=1000
+command=./bin/vadalog-wrapper --program programs/doctors-q07/0100000/vadalog.txt --bind hospital:csv:./datasets/doctors/vadalog/0100000/hospital.data treatment:csv:./datasets/doctors/vadalog/0100000/treatment.data medprescription:csv:./datasets/doctors/vadalog/0100000/medprescription.data physician:csv:./datasets/doctors/vadalog/0100000/physician.data --working-dir results/doctors-q07/vadalog/0100000
+[2022-02-11 19:19:27,321][INFO]: ====================================================================================================
+[2022-02-11 19:19:27,322][INFO]: Time: 2022-02-11 19:19:27.321987
+[2022-02-11 19:19:27,322][INFO]: Processing dataset datasets/doctors/vadalog/0500000
+[2022-02-11 19:19:27,322][INFO]: Using program: programs/doctors-q07/0500000/vadalog.txt
+[2022-02-11 19:19:27,322][INFO]: Working dir: results/doctors-q07/vadalog/0500000
+[2022-02-11 19:19:27,323][DEBUG]: name=0500000
+[2022-02-11 19:19:27,323][DEBUG]: program=programs/doctors-q07/0500000/vadalog.txt
+[2022-02-11 19:19:27,323][DEBUG]: datasets=[PosixPath('datasets/doctors/vadalog/0500000/hospital.data'), PosixPath('datasets/doctors/vadalog/0500000/treatment.data'), PosixPath('datasets/doctors/vadalog/0500000/medprescription.data'), PosixPath('datasets/doctors/vadalog/0500000/physician.data')]
+[2022-02-11 19:19:27,324][DEBUG]: timeout=300.0
+[2022-02-11 19:19:27,324][DEBUG]: tool=vadalog
+[2022-02-11 19:19:27,324][DEBUG]: tool_config={}
+[2022-02-11 19:19:27,324][DEBUG]: run_config={'binds': ['hospital:csv:./datasets/doctors/vadalog/0500000/hospital.data', 'treatment:csv:./datasets/doctors/vadalog/0500000/treatment.data', 'medprescription:csv:./datasets/doctors/vadalog/0500000/medprescription.data', 'physician:csv:./datasets/doctors/vadalog/0500000/physician.data']}
+[2022-02-11 19:19:27,324][DEBUG]: working_dir=results/doctors-q07/vadalog/0500000
+[2022-02-11 19:19:27,324][INFO]: Starting Vadalog engine server...
+[2022-02-11 19:19:27,328][INFO]: Wait until Vadalog server is healthy...
+[2022-02-11 19:19:27,333][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:28,338][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:29,342][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:30,346][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:31,350][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:31,600][DEBUG]: http://localhost:8080 "GET / HTTP/1.1" 404 None
+[2022-02-11 19:19:31,601][INFO]: Vadalog is ready!
+[2022-02-11 19:19:44,147][INFO]: name=0500000
+status=Status.SUCCESS
+time_end2end=9.319555196998408
+nb_atoms=1000
+command=./bin/vadalog-wrapper --program programs/doctors-q07/0500000/vadalog.txt --bind hospital:csv:./datasets/doctors/vadalog/0500000/hospital.data treatment:csv:./datasets/doctors/vadalog/0500000/treatment.data medprescription:csv:./datasets/doctors/vadalog/0500000/medprescription.data physician:csv:./datasets/doctors/vadalog/0500000/physician.data --working-dir results/doctors-q07/vadalog/0500000
+[2022-02-11 19:19:44,147][INFO]: ====================================================================================================
+[2022-02-11 19:19:44,147][INFO]: Time: 2022-02-11 19:19:44.147916
+[2022-02-11 19:19:44,147][INFO]: Processing dataset datasets/doctors/vadalog/1000000
+[2022-02-11 19:19:44,148][INFO]: Using program: programs/doctors-q07/1000000/vadalog.txt
+[2022-02-11 19:19:44,148][INFO]: Working dir: results/doctors-q07/vadalog/1000000
+[2022-02-11 19:19:44,148][DEBUG]: name=1000000
+[2022-02-11 19:19:44,148][DEBUG]: program=programs/doctors-q07/1000000/vadalog.txt
+[2022-02-11 19:19:44,148][DEBUG]: datasets=[PosixPath('datasets/doctors/vadalog/1000000/hospital.data'), PosixPath('datasets/doctors/vadalog/1000000/treatment.data'), PosixPath('datasets/doctors/vadalog/1000000/medprescription.data'), PosixPath('datasets/doctors/vadalog/1000000/physician.data')]
+[2022-02-11 19:19:44,148][DEBUG]: timeout=300.0
+[2022-02-11 19:19:44,148][DEBUG]: tool=vadalog
+[2022-02-11 19:19:44,148][DEBUG]: tool_config={}
+[2022-02-11 19:19:44,148][DEBUG]: run_config={'binds': ['hospital:csv:./datasets/doctors/vadalog/1000000/hospital.data', 'treatment:csv:./datasets/doctors/vadalog/1000000/treatment.data', 'medprescription:csv:./datasets/doctors/vadalog/1000000/medprescription.data', 'physician:csv:./datasets/doctors/vadalog/1000000/physician.data']}
+[2022-02-11 19:19:44,148][DEBUG]: working_dir=results/doctors-q07/vadalog/1000000
+[2022-02-11 19:19:44,148][INFO]: Starting Vadalog engine server...
+[2022-02-11 19:19:44,150][INFO]: Wait until Vadalog server is healthy...
+[2022-02-11 19:19:44,152][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:45,157][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:46,162][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:47,166][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:48,170][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:49,173][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:19:49,388][DEBUG]: http://localhost:8080 "GET / HTTP/1.1" 404 None
+[2022-02-11 19:19:49,389][INFO]: Vadalog is ready!
+[2022-02-11 19:20:12,441][INFO]: name=1000000
+status=Status.SUCCESS
+time_end2end=19.773253827996086
+nb_atoms=1000
+command=./bin/vadalog-wrapper --program programs/doctors-q07/1000000/vadalog.txt --bind hospital:csv:./datasets/doctors/vadalog/1000000/hospital.data treatment:csv:./datasets/doctors/vadalog/1000000/treatment.data medprescription:csv:./datasets/doctors/vadalog/1000000/medprescription.data physician:csv:./datasets/doctors/vadalog/1000000/physician.data --working-dir results/doctors-q07/vadalog/1000000

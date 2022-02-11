@@ -1,0 +1,4 @@
+[2022-02-11 19:15:08,783][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:15:08,788][DEBUG]: http://localhost:8080 "GET / HTTP/1.1" 404 None
+[2022-02-11 19:15:08,791][DEBUG]: Starting new HTTP connection (1): localhost:8080
+[2022-02-11 19:15:09,652][DEBUG]: http://localhost:8080 "POST /evaluate HTTP/1.1" 200 None

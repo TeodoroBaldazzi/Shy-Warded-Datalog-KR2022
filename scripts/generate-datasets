@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+from pathlib import Path
+
+import click
+
+from scripts import ROOT_DIR
+from scripts.dataset_generation.doctors import DOCTORS_DATASET_DIR, generate_doctors
+from scripts.dataset_generation.psc import generate_psc
+
+
+@click.command("generate-datasets")
+@click.option("--output-dir", required=True, type=click.Path(dir_okay=True, file_okay=False, writable=True),
+              default=ROOT_DIR / "datasets")
+@click.option("--force", default=True, help="Force output directory removal.")
+def main(output_dir, force):
+    output_dir = Path(output_dir)
+    print("generating psc")
+    generate_psc(output_dir, force)
+    print("generating doctors")
+    generate_doctors(DOCTORS_DATASET_DIR, output_dir, force)
+
+
+if __name__ == '__main__':
+    main()
